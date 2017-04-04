@@ -82,6 +82,11 @@
     <%= javascript_include_tag "match-height/jquery.matchHeight.js" %>
     <%= javascript_include_tag "main.js" %>
 
+    <!-- Eloqua forms -->
+    <script src="//www.redhat.com/forms/scripts/jquery.gatedform.plugins.js"></script>
+    <script src="//www.redhat.com/forms/scripts/jquery.gatedform.js"></script>
+    <script src="//www.redhat.com/j/s_code.js"></script>
+
     <script type="text/javascript">
     <%= content_for?(:javascript) ? yield_content(:javascript) : '' %>
     </script>
