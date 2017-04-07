@@ -697,21 +697,9 @@ ul.participants.list {
   width: 100%;
 }
 
-// Eloqua form styles override
-#join {
-	#GatedFormContainer {
-		.form-header {
-			h4 {
-				padding-bottom: 0;  // reduce the gap between title and sub-title
-			}
-			.form-message {
-				padding-bottom: 20px;
-				padding-left: 0;  // align left with the rest of the text
-			}
-		}
-	}
-
-	#Loading {
-		padding-top: 50px;
-	}
+// Eloqua form iframe
+#elq-iframe-signup-container {
+  iframe {
+	  width: 100%;
+  }
 }
