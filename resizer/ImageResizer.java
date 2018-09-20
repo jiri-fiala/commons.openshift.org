@@ -144,6 +144,18 @@ public class ImageResizer {
               continue;
             }
 
+            // Check the company URL, add "http://" to plain links
+            if (!business_url.toLowerCase().matches("^https?://.*")) {
+               business_url = "http://" + business_url;
+               System.out.println("Warning: Company URL amended to " + business_url);
+              }
+            try {
+              company_url = new URL(business_url);
+            } catch (MalformedURLException e) {
+              System.out.println("Error: Invalid company URL (" + business_url + ") - " + company);
+              continue;
+            }
+
             Scanner participantsReader = new Scanner(new File(COMMONS_PATH + "/data/participants.yml"));
 
             addIssue = true;
@@ -175,7 +187,7 @@ public class ImageResizer {
                 //Appends company and information to 'participants.yml'
                 out.append("- name: \"" + company + "\"");
                 out.newLine();
-                out.append("  link: \"" + business_url + "\"");
+                out.append("  link: \"" + company_url + "\"");
                 out.newLine();
                 out.append("  logo: \"commons-logos/" + fileName + "\"");
                 out.newLine();
