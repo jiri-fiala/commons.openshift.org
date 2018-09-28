@@ -1,43 +1,41 @@
 vetted_operators:
-  - title: "operator title 1"
-    link: "http://www.google.com/"
+  - title: "etcd"
+    link: "https://github.com/coreos/etcd-operator"
     logo: "operators/remove.png"
-    logo_link: "http://www.redhat.com/"
-    description: "A short operator description."
-  - title: "operator title 2"
-    link: "http://www.google.com/"
+    logo_link: "https://coreos.com/operators"
+    description: "The etcd operator creates, configures, and manages etcd clusters on Kubernetes. Automatically scales and backs up your data"
+  - title: "Vault"
+    link: "https://github.com/coreos/vault-operator"
     logo: "operators/remove.png"
-  - title: "operator title 3"
-    link: "http://www.google.com/"
+    logo_link: "https://www.vaultproject.io/"
+    description: "The Vault operator deploys and manages Vault clusters on Kubernetes. Vault instances created by the Vault operator are highly available and support automatic failover and upgrade."
+  - title: "Prometheus"
+    link: "https://github.com/coreos/prometheus-operator"
     logo: "operators/remove.png"
-    logo_link: "http://www.redhat.com/"
-    description: >-
-      A longer operator description:<br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut est elit, rhoncus ac posuere eleifend, fermentum ac massa. Praesent vehicula
-      efficitur gravida. Nullam quam quam, porttitor eget sapien nec, eleifend imperdiet risus. Donec metus massa, posuere eu luctus ut, placerat
-      eget dolor. Sed enim lacus, consectetur et leo vitae, lobortis vehicula purus. Etiam vehicula dolor rutrum, lobortis mi sed, ultricies diam.
-      Pellentesque nec placerat odio. Mauris odio ex, rutrum vitae suscipit sit amet, vehicula eget risus. Nulla varius, magna eu consectetur malesuada,
-      nulla dui commodo purus, vitae eleifend diam neque in orci. Ut ut hendrerit nulla. Donec pellentesque orci pulvinar venenatis egestas.
+    logo_link: "https://coreos.com/operators"
+    description: "The Prometheus operator creates/configures/manages Prometheus clusters atop Kubernetes"
   - title: "Rook"
-    link: "https://github.com/rook/rook/tree/master/cluster/examples/kubernetes"
+    link: "https://github.com/rook/rook"
     logo: "operators/remove.png"
-    description: "File, Block, and Object Storage Services for your Cloud-Native Environment"
+    logo_link: "https://coreos.com/operators"
+    description: "Rook is an open source cloud-native storage orchestrator for Kubernetes, providing the platform, framework, and support for a diverse set of storage solutions to natively integrate with cloud-native environments."
   - title: "ElasticSearch"
     link: "https://github.com/upmc-enterprises/elasticsearch-operator"
     logo: "operators/remove.png"
     logo_link: "http://www.redhat.com/"
-    description: "Elasticsearch is a distributed, RESTful search and analytics engine. This operator manages one or more elastic search clusters on Kubernetes."
-  - title: "etcd"
-    link: "https://github.com/coreos/etcd-operator"
+    description: "The ElasticSearch operator is designed to manage one or more elastic search clusters. Included in the project (initially) is the ability to create the Elastic cluster, deploy the data nodes across zones in your Kubernetes cluster, and snapshot indexes to AWS S3."
+   - title: "MongoDB Enterprise"
+    link: "https://github.com/mongodb/mongodb-enterprise-kubernetes"
     logo: "operators/remove.png"
-    logo_link: "http://www.redhat.com/"
-    description: "etcd is a distributed key-value (k/v) store. This operator manages etcd k/v database clusters on Kubernetes."
-  - title: "Prometheus"
-    link: "https://github.com/coreos/prometheus-operator"
+    logo_link: "https://docs.opsmanager.mongodb.com/current/tutorial/install-k8s-operator/"
+    description: "The MongoDB Enterprise Kubernetes Operator enables easy deploys of MongoDB into Kubernetes clusters, using our management, monitoring and backup platforms, Ops Manager and Cloud Manager. By installing this integration, you will be able to deploy MongoDB instances with a single simple command."
+  - title: "Dynatrace"
+    link: "https://github.com/Dynatrace/dynatrace-oneagent-operator"
     logo: "operators/remove.png"
-    logo_link: "http://www.redhat.com/"
-    description: >-
-      Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured
-      targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts if some condition is observed to be
-      true. The Prometheus Operator for Kubernetes provides easy monitoring definitions for Kubernetes services and deployment and management
-      of Prometheus instances.
+    logo_link: "https://www.dynatrace.com/support/help/cloud-platforms/openshift/full-stack/basic-concepts/what-is-oneagent-operator/"
+    description: "The Dynatrace OneAgent Operator which supports the rollout and lifecycle of Dynatrace OneAgent in Kubernetes and OpenShift clusters. Rolling out Dynatrace OneAgent via DaemonSet on a cluster is straightforward. Maintaining its lifecycle places a burden on the operational team. Dynatrace OneAgent Operator closes this gap by automating the repetitive steps involved in keeping Dynatrace OneAgent at its latest desired version."
+  - title: "Couchbase"
+    link: "https://docs.couchbase.com/operator/1.0/release-notes.html"
+    logo: "operators/remove.png"
+    logo_link: "https://www.couchbase.com/products/cloud/kubernetes"
+    description: "The Couchbase Autonomous Operator for Kubernetes enables cloud portability and automates operational best practices for deploying and managing the Couchbase Data Platform."
