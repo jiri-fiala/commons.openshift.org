@@ -341,6 +341,7 @@ FileETag None
   RewriteRule ^gathering/videos$ videos.html [R,L]
   RewriteRule ^gathering$ https://meeting-reg.com/redhat/2016/public/openshiftgathering [R=301,L]
   RewriteRule ^quotes.html$ testimonials.html [R=301,L]
+  RewriteRule ^sig/Operations.html$ sig/AIOps.html [R=301,L]
 </IfModule>
 
 
