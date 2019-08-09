@@ -827,7 +827,7 @@ ul.operators.list {
 
 
 // blog feeds on SIG sign up form
-#blog-feed-sig {
+#blog-feed-sig, #blog-promoted {
   .blog-item {
 	  margin: 0 0 5px;
 		padding-bottom: 1em;
@@ -1205,7 +1205,7 @@ position:relative;
 }
 
 /*  SelectNav Short Main Menu Navigation (Gathering pages only) -----------------------------*/
-.selectnav, {
+.selectnav {
 	display: block;
 	border-radius: 5px;
 	margin:0;
@@ -1233,7 +1233,7 @@ position:relative;
 	}
 }
 .layout-boxed .selectnav_menu,
-.layout-boxed-margin .selectnav_menu,{
+.layout-boxed-margin .selectnav_menu {
 	max-width: 1230px;
 }
 
@@ -1279,7 +1279,7 @@ position:relative;
 	}
 }
 .layout-boxed .gathering_menu,
-.layout-boxed-margin .gathering_menu,{
+.layout-boxed-margin .gathering_menu {
 	max-width: 1230px;
 }
 @media (max-width: 980px) {
