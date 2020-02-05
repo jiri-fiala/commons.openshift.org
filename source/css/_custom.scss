@@ -1081,16 +1081,101 @@ margin: 0 20px;
 .event-cal-img {
 	width:120px;
 }
+
+.track-selector {
+	padding-bottom: 15px;
+
+	.btn {
+		color: white;
+
+		&.btn-track-inactive
+		{
+			color: black;
+			background-color: #ccc;
+		}
+	}
+}
+
+.track-color-1, .btn-track-color-1 {
+	background-color: darkblue;
+}
+
+.track-color-2, .btn-track-color-2 {
+	background-color: darkred;
+}
+
+.track-color-3, .btn-track-color-3 {
+	background-color: darkgreen;
+}
+
+.track-color-4, .btn-track-color-4 {
+	background-color: black;
+}
+
 .schedule-list {
-	padding: 0 20px;
+	margin: 0;
+	padding: 15px;
 
 	p {
 		margin: 0;
+	}
+
+	&:not(:last-child) {
+		border-bottom: 1px solid lightgray;
+	}
+	
+	.session-track {
+		border-radius: 3px;
+		color: white;
+		display: inline-block;
+		font-size: 0.7em;
+		line-height: 0.8em;
+		padding: 5px;
 	}
 }
 .schedule-list-border-left {
 	border-left:2px solid #eee;
 }
+
+.container#workshops {
+	padding-top: 2.5em;
+}
+
+#workshops-accordion {
+	.card {
+		margin: 8px 0;
+
+		p {
+			margin: 0 0 10px 0;
+		}
+
+		.card-header {			
+			background-color: white;
+			border: 2px solid black;
+			cursor: pointer;
+
+			.workshop-title {
+				padding: 10px;
+				&:not(.collapsed) {
+					font-weight: bold;
+					}				
+
+				.ec-icon {
+					float: right;
+				}
+			}
+		}
+
+		.card-body {
+			background-color: white;
+			padding: 10px;
+			border-right: 1px dashed black;
+			border-left: 1px dashed black;
+			border-bottom: 1px solid black;
+		}
+	}
+}
+
 .section-gathering {
 	padding-bottom: 60px;
 	padding-top: 60px;

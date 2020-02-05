@@ -112,11 +112,12 @@ gatherings:
       schedule: ""
       speakers: ""
       venue: ""
-    schedule: (required; to be chronologically ordered - the template does not re-order)
-      - local_time: "8:00 am" (start time of the session)
+    schedule: (required; reordered according to local time)
+      - local_time: "8:00 am" (start time of the session; this string is parsed in attempt to order by time)
         session_name: "Registration Opens"
       - local_time: "9:00 am"
         session_name: "Welcome to the Commons: Making Collaboration that Works"
+        track: "OpenShift" (optional name of track, used for grouping sessions; up to 4 tracks are supported)
         speakers: (optional; if present at least one speaker id is expected)
           - id: "diane" (a unique id defined in speakers list below)
 ```
